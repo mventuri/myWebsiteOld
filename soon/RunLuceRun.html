@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html class="no-js">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Andrea Lucentini contro la Poliomielite</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="robots" content="all,follow">
+    <!-- Bootstrap and Font Awesome css-->
+    <link rel="stylesheet" href="css/font-awesome.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- Google fonts-->
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Pacifico">
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <!-- Theme stylesheet-->
+    <link rel="stylesheet" href="css/style.default.css" id="theme-stylesheet">
+    <!-- Custom stylesheet - for your changes-->
+    <link rel="stylesheet" href="css/custom.css">
+    <!-- Favicon-->
+    <link rel="icon" href="favicon.ico" type="img/luce_polio.ico"/>
+    <!-- Tweaks for older IEs--><!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+        <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script><![endif]-->
+  </head>
+  <body>
+    <div style="background-image: url('img/paris.jpg')" class="main"> 
+      <div class="overlay"></div>
+      <div class="container">
+
+        <h1 class="cursive"><img src="img/luce_polio.jpg" height="250" width="250" style="border-radius: 200px;"> </br>Aiuta Andrea a raccogliere fondi contro la Poliomielite!</br>
+          </br>
+          
+            <p class="list">1.Inserisci l'importo che vuoi donare</p></br>
+            <p class="list">2.Clicca sul tasto "Quanti bambini aiuterò" per vedere quanti vaccini stai acquistando</p></br>
+            <p class="list">3.Clicca sul tasto "Dona Ora" per andare sul sito Rete del Dono ed aiutarli!</p></br>
+          
+        
+        <a href="https://www.retedeldono.it/it/iniziative/rotary-international-distretto-2080/andrea.lucentini/andrea-per-rotaract-distretto-2080" class="btn btn-warning btn-lg active" role="button" aria-pressed="true">Dona Ora!</a></h1>
+        
+        <form class="form-inline">
+              <div class="form-group">
+                <label for="email" class="sr-only"></label>
+                <input type="text" placeholder="Importo Donazione" id="firstNumber" class="form-control transparent">
+              </div>
+              <button class="btn btn-danger" type="button" onClick="divideBy()">Quanti Bambini aiuterò? </button>
+        </form>
+        <h2 class="sub"><span id = "result"></h2>
+        
+        <div class="mailing-list" >
+          
+          
+          <div class="row">
+            
+          </div>
+        </div>
+      </div>
+      <div class="footer">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-6">
+              
+            </div>
+            <div class="col-md-6">
+              
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    
+    <!-- JAVASCRIPT FILES -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="javascripts/vendor/jquery-1.11.0.min.js"><\/script>')</script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.cookie.js"></script>
+    <script src="js/front.js"></script>
+    <!--CALCOLO-->
+    <script>
+
+        function divideBy() 
+        { 
+                num1 = document.getElementById("firstNumber").value;
+                
+        document.getElementById("result").innerHTML = Math.floor(num1 / 0.51);
+        
+        }
+    </script>
+    
+  </body>
+</html>

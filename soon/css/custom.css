@@ -1,0 +1,16 @@
+/* your styles go here */
+.form-inline {
+	text-align: center;
+}
+
+.cursive {
+	font-family: 'Roboto', sans-serif;
+}
+
+#result {
+	font-size: 150px;
+}
+
+.list{
+	font-size: 20px;
+}
